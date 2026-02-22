@@ -311,8 +311,8 @@ end
 -- функции Action
 
 function pings.sitAction()
-    local playing_animation = sitAnimation
-    check_if_animation_plays(playing_animation)
+    local current_animation = sitAnimation
+    check_if_animation_plays(current_animation)
 
     -- get block underneath the player, 
     -- centrelize player to block position for a not sitting on the air
@@ -321,6 +321,12 @@ function pings.sitAction()
     log("*You're sitting!")
 end
 
+function pings.DenyAction()
+    if current_animation ~= nil then
+        current_animation:stop()
+    end
+    log('animation stopped')
+end
     
 
 local action = ToggleMouth:newAction()
@@ -386,3 +392,9 @@ local action = Iteractions:newAction()
     :item("blue_orchid")
     :hoverColor(1,0,1)
     :onLeftClick(pings.sitAction)
+
+local action = Iteractions:newAction()
+    :title("Stop iteractions")
+    :item("barrier")
+    :hoverColor(1,0,1)
+    :onLeftClick(pings.DenyAction)
