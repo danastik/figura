@@ -1,0 +1,32 @@
+1. Eyes
+    1. Back(отсылает на прошлую страницу)
+    2. eyes render (цвет, эмиссив и т.д.)  
+        1) эмиссив
+        2) end_gate
+        3) Glint2 (toggle)
+    3. eyes emotions
+        1) Default
+        2) shocked (shaking on right click)
+        3) surprised
+        4) cute
+        5) 
+    4. eyes type
+2. Mouth
+3. Face
+    1. blushy
+    2. happy
+4. Body
+    1. Legs
+    2. Hands
+    3. Costumes
+5. Animations
+    1. Sit
+    2. Lay
+6. Interactions
+7. Particles
+8. Statistics
+    1. Hours played
+    2. Mouth time
+    3. Eyes time
+    4. Animations used
+    5. Interactions used
